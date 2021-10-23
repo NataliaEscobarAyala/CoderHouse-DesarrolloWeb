@@ -1,0 +1,43 @@
+    header {
+        height: 280px;
+        background: white;
+        border-color: black;
+        border: 1000px;
+        background-color: palevioletred;
+        background-image: url("../img/bodaHeader2.jpg");
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        color: black;
+    }
+    
+    main {
+        background-image: linear-gradient(rgb(202, 247, 202), white);
+    }
+    
+    footer {
+        height: 260px;
+        background: white;
+        border-color: black;
+        background-size: auto;
+        margin-top: 10px;
+        background-image: linear-gradient(rgb(202, 247, 202), white);
+    }
+    
+    #redes {
+        padding-right: 100px;
+        color: black;
+        font-size: 24px;
+        height: 50px;
+        display: inline-flex;
+        grid-gap: 1rem;
+    }
+    
+    .red {
+        display: grid;
+        grid-template-columns: 20px 20px 20px;
+    }

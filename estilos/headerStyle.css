@@ -1,0 +1,82 @@
+#body {
+    overflow-x: hidden;
+    background-image: linear-gradient(rgb(202, 247, 202), white);
+}
+
+header {
+    height: 280px;
+    background: white;
+    border-color: black;
+    border: 1000px;
+    background-color: palevioletred;
+    background-image: url("../img/bodaHeader2.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    display: inline-flex;
+    grid-template-columns: 160px 160px 180px 160px 100px;
+    margin: 44px;
+    padding-right: 10px;
+}
+
+.item6 {
+    padding-left: 450px;
+}
+
+.botones {
+    color: black;
+}
+
+.accesboton {
+    color: black;
+    margin-right: 15px;
+    cursor: grabbing;
+}
+
+a.botones {
+    background-color: rgb(188, 224, 188);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 2px;
+    border-color: rgb(128, 182, 21);
+    border: 2px solid #4CAF50;
+    text-decoration: none;
+    margin-right: 15px;
+    cursor: grabbing;
+}
+
+.divlogo {
+    height: 200px;
+    width: 320px;
+}
+
+#logo {
+    height: 170px;
+    width: 300px;
+}
+
+.caja_inline {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#navegador li {
+    display: inline;
+    padding-right: 3px;
+}
+
+a.accesboton {
+    background-color: rgb(188, 224, 188);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 2px;
+    border-color: rgb(128, 182, 21);
+    border: 2px solid #4CAF50;
+    text-decoration: none;
+}
