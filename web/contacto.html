@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideas</title>
+    <title>Contactos</title>
     <link rel="stylesheet" href="../estilos/contactosStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
 </head>
 
@@ -16,21 +17,100 @@
         <div class="caja_inline">
             <img id="logo" src="../img/logotrans.png" alt="logo event&dreams">
         </div>
+        <div class="container">
+            <button class="button">Button</button>
+            <input type="button" class="button" value="Input Button">
     </header>
     <main>
-        <div class="flex-consultas">
-            <div>Consultas</div>
-            <div class="consultas">
-                <form action="/my-handling-form-page" method="post"></form>
-                <div><label for="name">Nombre:</label></div>
-                <div><input type="text" id="name" name="user_name"></div>
-                <div><label for="mail">Correo electrónico:</label>
-                    <input type="email" id="mail" name="user_mail"></div>
-                <div><label for="msg">Mensaje:</label>
-                    <textarea id="msg" name="user_message"></textarea></div>
+        <h1 class="titulo">Contactanos</h1>
 
+        <div class="grid-container">
+            <h2>Envíanos un e-mail o mensaje
+                <p align="justify">Si quieres asesoría, tienes consultas sobre los productos y demás preguntas o inquietudes, no lo dudes y contáctanos, un\a operador\a se comunicara al instante.
+                    <br>Atendemos en horario laboral 08:30 - 18:30 pm.</p>
+            </h2>
+            <div>
+
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Provincia</label>
+                        <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Elige una provincia</option>
+                <option>Buenos Aires</option>
+                <option>Capital Federal</option>
+                <option>Catamarca</option>
+                <option>Chaco</option>
+                <option>Chubut</option>
+                <option>Córdoba</option>
+                <option>Corrientes</option>
+                <option>Entre Ríos</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa</option>
+                <option>La Rioja</option>
+                <option> Mendoza</option>
+                <option> Misiones</option>
+                <option> Neuquén</option>
+                <option>Río Negro</option>
+                <option>Salta</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tierra del Fuego</option>
+                <option>Tucumán</option>
+              </select>
+
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Consulta</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                 Acepto terminos y condiciones
+                </label>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar consulta</button>
+                    </div>
+                </form>
             </div>
+        </div>
+
+        </div>
+        </div>
     </main>
+
     <footer>
         <div id="redes">
 

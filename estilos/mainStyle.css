@@ -1,7 +1,13 @@
-main {
+body {
     background-image: linear-gradient(rgb(202, 247, 202), white);
-    /* APLICACION DE ANIMACION Y TRANSFORMACION */
     cursor: grabbing;
+    font-family: "Sofia", sans-serif;
+}
+
+.carousel-inner img {
+    height: 700px;
+    width: 1450px;
+    margin-left: 42px;
 }
 
 #contenedor {
@@ -12,9 +18,6 @@ main {
     right: 10px;
 }
 
-
-/* APLICACION DE ANIMACION Y TRANSFORMACION */
-
 @keyframes aparecer {
     0% {
         opacity: 0;
@@ -23,6 +26,8 @@ main {
         opacity: 1;
     }
 }
+
+.titulo {}
 
 .menu ul li {
     margin: 0;
@@ -74,4 +79,8 @@ ul.slider li:first-child {
 
 ul.slider li:target {
     opacity: 2;
+}
+
+main .titulo {
+    margin-left: 300px;
 }
