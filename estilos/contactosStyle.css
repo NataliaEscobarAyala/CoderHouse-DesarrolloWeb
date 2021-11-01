@@ -1,7 +1,7 @@
-body {
-    overflow-x: hidden;
+#body {
     background-image: linear-gradient(rgb(202, 247, 202), white);
     font-family: "Sofia", sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -13,55 +13,65 @@ header {
     background-image: url("../img/bodaHeader2.jpg");
     background-size: auto;
     background-repeat: no-repeat;
+    font-family: "Sofia", sans-serif;
+    overflow-x: hidden;
 }
 
-main {
-    padding: 10px;
-    background-image: linear-gradient(rgb(202, 247, 202), white);
-}
-
-.grid-container {
-    display: inline-flexbox;
-    background-color: linear-gradient(rgb(202, 247, 202), white);
-    grid-template-columns: 50px 50px;
-}
-
-.grid-container .titulo {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;
-    text-align: center;
-    font-size: 30px;
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-footer {
-    height: 260px;
-    background: white;
-    border-color: black;
-    background-size: auto;
-    margin-top: 10px;
-    background-image: linear-gradient(rgb(202, 247, 202), white);
-}
-
-#redes {
-    display: inline-flex;
-    padding-right: 3px;
-    display: flex;
+.btn-succes,
+.btn-succes:hover,
+.btn-succes:active,
+.btn-succes:visited,
+.btn-succes:focus {
+    background-color: #9fee94;
+    border-color: #9fee94;
+    font-size: 20px;
     color: black;
-    font-size: 24px;
-    position: top;
-    float: right;
-    height: 50px;
+}
+
+.btn-succes a {
+    text-decoration: none;
+    color: black;
+    background-color: #9fee94;
+}
+
+.btn .btn-succes dropdown-toggle,
+.btn-succes:hover,
+.btn-succes:active,
+.btn-succes:visited,
+.btn-succes:focus {
+    background-color: #9fee94;
+    border-color: #9fee94;
+}
+
+.btn-group.dropdown-menu {
+    font-size: 10px;
+    color: black;
+}
+
+.container {
+    display: inline-flex;
+    grid-template-columns: 160px 160px 180px 160px 100px 10px;
+    margin: 44px;
+    padding-right: 10px;
+}
+
+.container .btn-group {
+    color: black;
+    margin-right: 15px;
+    cursor: grabbing;
+    font-size: 20px;
+}
+
+.btn-group .btn btn-succes {
+    margin-right: 15px;
+}
+
+.btn-group {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.alert {
+    box-sizing: border-box;
+    width: 240px;
 }

@@ -1,82 +1,82 @@
-    #body {
-        overflow-x: hidden;
-        background-image: linear-gradient(rgb(202, 247, 202), white);
-        font-family: "Sofia", sans-serif;
-    }
-    
-    header {
-        height: 280px;
-        background: white;
-        border-color: black;
-        border: 1000px;
-        background-color: palevioletred;
-        background-image: url("../img/bodaHeader2.jpg");
-        background-size: auto;
-        background-repeat: no-repeat;
-        text-decoration: none;
-    }
-    
-    .btn-succes,
-    .btn-succes:hover,
-    .btn-succes:active,
-    .btn-succes:visited,
-    .btn-succes:focus {
-        background-color: #9fee94;
-        border-color: #9fee94;
-        font-size: 20px;
-        color: black;
-    }
-    
-    .btn-succes a {
-        text-decoration: none;
-        color: black;
-        background-color: #9fee94;
-    }
-    
-    .btn .btn-succes dropdown-toggle,
-    .btn-succes:hover,
-    .btn-succes:active,
-    .btn-succes:visited,
-    .btn-succes:focus {
-        background-color: #9fee94;
-        border-color: #9fee94;
-    }
-    
-    .btn-group.dropdown-menu {
-        font-size: 10px;
-        color: black;
-    }
-    
-    .container {
-        display: inline-flex;
-        grid-template-columns: 160px 160px 180px 160px 100px;
-        margin: 44px;
-        padding-right: 10px;
-    }
-    
-    .container .btn-group {
-        color: black;
-        margin-right: 15px;
-        cursor: grabbing;
-        font-size: 20px;
-    }
-    
-    .divlogo {
-        height: 200px;
-        width: 320px;
-    }
-    
-    #logo {
-        height: 170px;
-        width: 300px;
-    }
-    
-    .btn-group {
-        display: inline-block;
-        margin-right: 100px;
-    }
-    
-    #navegador li {
-        display: inline;
-        padding-right: 3px;
-    }
+#body {
+    overflow-x: hidden;
+    background-image: linear-gradient(rgb(202, 247, 202), white);
+    font-family: "Sofia", sans-serif;
+}
+
+header {
+    height: 280px;
+    background: white;
+    border-color: black;
+    border: 1000px;
+    background-color: palevioletred;
+    background-image: url("../img/bodaHeader2.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.btn-succes,
+.btn-succes:hover,
+.btn-succes:active,
+.btn-succes:visited,
+.btn-succes:focus {
+    background-color: #9fee94;
+    border-color: #9fee94;
+    font-size: 20px;
+    color: black;
+}
+
+.btn-succes a {
+    text-decoration: none;
+    color: black;
+    background-color: #9fee94;
+}
+
+.btn .btn-succes dropdown-toggle,
+.btn-succes:hover,
+.btn-succes:active,
+.btn-succes:visited,
+.btn-succes:focus {
+    background-color: #9fee94;
+    border-color: #9fee94;
+}
+
+.btn-group.dropdown-menu {
+    font-size: 10px;
+    color: black;
+}
+
+.container {
+    display: inline-flex;
+    grid-template-columns: 160px 160px 180px 160px 100px;
+    margin: 44px;
+    padding-right: 10px;
+}
+
+.container .btn-group {
+    color: black;
+    margin-right: 15px;
+    cursor: grabbing;
+    font-size: 20px;
+}
+
+.divlogo {
+    height: 200px;
+    width: 320px;
+}
+
+.btn-group {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+#logo {
+    height: 170px;
+    width: 300px;
+}
+
+#navegador li {
+    display: inline;
+    padding-right: 3px;
+}
