@@ -46,6 +46,40 @@ body {
           animation-iteration-count: infinite;
 }
 
+@media screen and (max-width: 740px) {
+  main {
+    width: 100%;
+  }
+  #demo {
+    width: 100%;
+  }
+  #demo img {
+    width: 50%;
+    margin: 30px;
+  }
+  .vestidos-contenedor {
+    width: 50%;
+    margin: 30px;
+    padding-bottom: 3500px;
+  }
+  .card h-100 {
+    width: 50%;
+    margin: 30px;
+  }
+  .flex-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  main {
+    width: 100%;
+  }
+  #demo {
+    width: 100%;
+  }
+}
+
 @-webkit-keyframes aparecer {
   0% {
     opacity: 0;

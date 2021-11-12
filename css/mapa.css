@@ -9,21 +9,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#caf7ca), to(white));
   background-image: linear-gradient(#caf7ca, white);
   font-family: "Sofia", sans-serif;
-}
-
-a {
-  color: black;
   text-decoration: none;
-}
-
-h2 {
-  font-weight: bolder;
-  font-size: 48px;
-}
-
-h3 {
-  font-weight: lighter;
-  font-size: 24px;
 }
 
 .container {
@@ -38,8 +24,94 @@ h3 {
   height: 400px;
 }
 
-main {
-  height: 1400px;
+@media screen and (max-width: 740px) {
+  main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  main {
+    width: 100%;
+  }
+  #demo {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+ul.slider {
+  height: 400px;
+  background-image: cover;
+  width: 1250;
+}
+
+ul.slider li {
+  position: absolute;
+  left: 5;
+  top: 0;
+  opacity: 0;
+  width: 1000px;
+  height: inherit;
+  background-color: wheat;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+ul.slider li img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul.slider li:first-child {
+  opacity: 1;
+}
+
+ul.slider li:target {
+  opacity: 2;
+}
+
+main .titulo {
+  text-align: center;
+  font-size: 50px;
+}
+
+.main-map {
+  height: 700px;
   width: 1220px;
   margin-left: 50px;
   margin-top: 20px;
@@ -50,49 +122,13 @@ main {
   margin-right: 400px;
   background-image: url(../img/fondo.jpg);
   padding: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-@media screen and (max-width: 740px) {
-  .container {
-    width: 100%;
-    height: 500px;
-  }
-  main {
-    width: 100%;
-    height: 3300px;
-  }
-  .card h-100 {
-    width: 50%;
-    margin: 30px;
-  }
-  .flex-container {
-    width: 90%;
-  }
-}
-
-.py-4 {
-  text-align: center;
-}
-
-.titulo {
-  font-size: 60px;
-  text-align: center;
-}
-
-.containerTitulo {
-  padding: 100px;
-}
-
-.card-img-top {
-  width: 300px;
-  height: 300px;
-  margin: 10px;
-}
-
-.main-screen {
-  text-align: center;
+.mapa {
+  width: 400px;
+  height: 400px;
 }
 
 ul {
@@ -111,7 +147,7 @@ ul li {
   display: inline-flex;
 }
 
-ul li a {
+ul li .btn btn-succes dropdown-toggle {
   background-color: #9fee94;
   color: black;
   padding: 5px 15px 5px 15px;
@@ -130,7 +166,7 @@ ul li a {
   font-weight: normal;
 }
 
-ul li a:hover {
+ul li .btn btn-succes dropdown-toggle:hover {
   background-color: #9fee94;
   color: black;
   padding: 5px 15px 5px 15px;
@@ -148,6 +184,11 @@ ul li a:hover {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
   font-weight: normal;
+}
+
+.containerTitulo {
+  font-size: 60px;
+  text-align: justify;
 }
 
 footer {
@@ -211,4 +252,4 @@ footer .a:hover {
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
   font-weight: normal;
 }
-/*# sourceMappingURL=zapDamas.css.map */
+/*# sourceMappingURL=mapa.css.map */
