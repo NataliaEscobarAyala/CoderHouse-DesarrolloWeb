@@ -45,10 +45,11 @@ $color: black;
     
     .card h-100{
         width: 50%; 
-        margin: 30px
+        margin: 30px;
+        height: 2100px;
     }
     .flex-container{
-        width: 90%;
+        width: 50%;
     }
 }
 
@@ -69,16 +70,6 @@ body {
 }
 
 
-.container {
-    background-image: url(../img/bodaheader3.jpg);
-    padding: 100px 100px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    background-size: 100% 100%;
-    width: 1400px;
-    margin-left: 90px;
-    height: 400px;
-}
-
 
 .carousel-inner {
     width: 1220px;
@@ -98,7 +89,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 525px) {
     main{
         width: 100%;
     }
@@ -236,10 +227,10 @@ ul {
     }
 }
 
-.containerTitulo {
-    font-size: 60px;
-    text-align: justify;
-}
+// .containerTitulo {
+//     font-size: 60px;
+//     text-align: justify;
+// }
 
 footer {
     padding: 100px;
@@ -267,3 +258,31 @@ footer {
         }
     }
 }
+
+header {
+    padding: 100px;
+    width: 1220px;
+    margin-top: 20px;
+    margin-left: 50px;
+    display: inline-flex;
+    background-image: url(../img/bodaheader3.jpg);
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    .a {
+        @include btn($background-color,
+        $bold: "true", $color: $secondary-color);
+        font-weight: normal;
+        &:hover {
+            @include btn ($secondary-color,
+            $terciary-color,
+            "false");
+            box-shadow: $box-shadow;
+            font-weight: normal;
+        }
+    }
+}
+
