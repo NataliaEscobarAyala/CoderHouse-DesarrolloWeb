@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale= 1.0, maximum-scale=1.0,minimum-scale=1.0 ">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <script src="./script/codigo.js"></script>
 </head>
 
 <body>
@@ -78,13 +79,39 @@
     <header class="flex-container">
         <img id="logo" src="./img/logotrans.png" alt="logo event&dreams">
         <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li> <a href="./web/servicios.html">Servicios</a></li>
-            <li> <a href="productos.html">Productos</a></li>
             <li>
-                <a href="./web/sobrenosotros.html ">Sobre nosotros</a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true"><a href="servicios.html">Servicios</a>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./web/Catering.html">Catering</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./web/Dj.html">DJ</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+            </li>
+            <li>
+                <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true"><a href="./web/productosindex.html">Productos</a>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./web/ZapatosDama.html">Zapatos- Dama</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./web/ZapatosCaballero.html">Zapatos- Caballero</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./web/Joyeria.html">Joyeria</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            
+            <li>
+                <a class="none" href="./web/sobrenosotros.html ">Sobre nosotros</a>
+            </li>
+            <li>
+                <a class="none" href="./web/contacto.html ">Contacto</a>
+            </li>
         </ul>
-
         </li>
         </ul>
     </header>
@@ -92,6 +119,8 @@
         <h1 class="titulo"> Organiza la boda de tus sueños con Event&Dreams</h1>
     </div>
 
+    <!-- <main class="flex-container"> -->
+    <!-- <div class="container-all" id="move-content">  -->
     <main>
         <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
@@ -194,19 +223,42 @@
             </div>
         </div>
     </main>
-
     <footer class="flex-container">
         <ul>
             <li><a href="./index.html">Inicio</a></li>
-            <li> <a href="./web/servicios.html">Servicios</a></li>
-            <li> <a href="productos.html">Productos</a></li>
             <li>
-                <a href="./web/sobrenosotros.html ">Sobre nosotros</a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true"><a href="servicios.html">Servicios</a>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./web/Catering.html">Catering</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./web/Dj.html">DJ</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+            </li>
+            <li>
+                <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true"><a href="./web/productosindex.html">Productos</a>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./web/ZapatosDama.html">Zapatos- Dama</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./web/ZapatosCaballero.html">Zapatos- Caballero</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./web/Joyeria.html">Joyeria</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li>
+                <a href="./web/sobrenosotros.html "> Sobre nosotros</a>
+            </li>
         </ul>
         </li>
         </ul>
         <div>
-            <div>Seguinos en:</div>
+            <!-- <div>Seguinos en:</div>
             <ul>
                 <li>
                     <a href="https://www.facebook.com/" class="btn">
@@ -229,8 +281,11 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </footer>
+
+    <!-- </div> -->
+
 </body>
 
 </html>

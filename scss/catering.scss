@@ -11,12 +11,11 @@ $color: black;
 @function size($value) {
     @return $value * $unit;
 }
-
 @mixin global {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-
 @mixin btn($background-color, $bold, $color) {
     background-color: $secondary-color;
     color: $font-color;
@@ -31,92 +30,58 @@ $color: black;
         font-weight: bolder;
     }
 }
-
 * {
     @include global;
     box-sizing: border-box;
 }
-@media screen and (max-width: 740px) {
-    main{
-        width: 100%;
-    }
-    
-    
-    
-    .card h-100{
-        width: 50%; 
-        margin: 30px
-    }
-    .flex-container{
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 2000px) {
-    main{
-        width: 100%;
-    }
-    #demo {
-        width: 100%;
-    }
-    
-}
-
 
 body {
     background-image: $primary-color;
     font-family: "Sofia", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-
-
-.container {
+header {
+    padding: 100px;
+    width: 100%;
+    margin-top: 20px;
+    display: inline-flex;
     background-image: url(../img/bodaheader3.jpg);
-    padding: 100px 100px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    background-size: 100% 100%;
-    width: 1400px;
-    margin-left: 90px;
-    height: 400px;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    .a {
+        @include btn($background-color,
+        $bold: "true", $color: $secondary-color);
+        font-weight: normal;
+        &:hover {
+            @include btn ($secondary-color,
+            $terciary-color,
+            "false");
+            box-shadow: $box-shadow;
+            font-weight: normal;
+        }
+    }
 }
+#logo{
+    float:left;
+    width: 45%;
+    padding-right: 25%; 
+ }
 
 main {
-    height: 800px;
-    width: 1220px;
-    margin-left: 50px;
+    height: 1200px;
+    width: 100%;
     margin-top: 20px;
-    margin-right: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     background-position: center;
-    margin-right: 400px;
     background-image: url(../img/fondo.jpg);
     padding: $box-shadow;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.py-4 {
-    text-align: center;
-}
-
-.titulo {
-    font-size: 60px;
-    text-align: center;
-}
-
-.containerTitulo {
-    padding: 100px;
-}
-
-.card-img-top {
-    width: 400px;
-    height: 300px;
-    margin: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.main-screen {
-    text-align: center;
 }
 
 ul {
@@ -140,12 +105,11 @@ ul {
         }
     }
 }
-
 footer {
     padding: 100px;
-    width: 1220px;
+    width: 
+    100%;
     margin-top: 20px;
-    margin-left: 50px;
     display: inline-flex;
     background-image: url(../img/lineas-abstractas-onda-suave-verde_1017-24872.jpg);
     background-size: cover;
@@ -153,7 +117,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100px;
+    height: 200px;
     .a {
         @include btn($background-color,
         $bold: "true", $color: $secondary-color);
@@ -167,6 +131,106 @@ footer {
         }
     }
 }
+
+
+// Responsive
+
+@media screen and (max-width: 1220px) { 
+    .flex-container{ 
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+    header .flex-container{
+        height: 600px;
+    }
+    }
+
+@media screen and (max-width: 1120px) { 
+ .flex-container{
+    max-width: 1200px;
+    padding: 0 20px;
+}
+header .flex-container{
+    height: 600px;
+}}
+@media screen and (max-width: 520px) { 
+ header .flex-container{
+    width: 100%;
+    left: 0;
+    color: honeydew;
+    overflow: hidden ;
+ }
+
+ #logo{
+     margin-left: 50px;
+ }
+
+.flex-container ul li a{
+    width: 0%;
+    padding:0% ;
+}
+.vestidos-contenedor{
+height: min-content;}
+.flex-container .none{
+    display: none;
+}
+}
+@media screen and (max-width: 1020px) { 
+    header .flex-container{
+        width: 100%;
+        left: 0;
+        overflow: hidden ;
+        height: min-content;
+     }
+     .flex-container ul li a{
+        width: 0%;
+        padding:0% ;
+    }
+     #logo{
+         margin-left: 50px;
+     }
+    
+    .flex-container ul li a{
+        width: 0%;
+        padding:0% ;
+    }
+    .vestidos-contenedor{
+    height: min-content;}
+
+    .flex-container .none{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 800px) { 
+    header .flex-container{
+        width: 100%;
+        left: 0;
+        overflow: hidden ;
+        height: min-content;
+     }
+     .flex-container ul li a{
+        width: 0%;
+        padding:0% ;
+    }
+     #logo{
+         margin-left: 50px;
+     }
+    
+    .flex-container ul li a{
+        width: 0%;
+        padding:0% ;
+    }
+    .vestidos-contenedor{
+    height: min-content;}
+
+    .flex-container .none{
+        display: none;
+    }
+    
+}
+
+
 
 .video-responsive {
     // position: relative;

@@ -11,12 +11,11 @@ $color: black;
 @function size($value) {
     @return $value * $unit;
 }
-
 @mixin global {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-
 @mixin btn($background-color, $bold, $color) {
     background-color: $secondary-color;
     color: $font-color;
@@ -25,245 +24,27 @@ $color: black;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    // justify-content: space-around;
     border-radius: 5px;
     @if($bold=="true") {
         font-weight: bolder;
     }
 }
-
 * {
     @include global;
     box-sizing: border-box;
 }
-@media screen and (max-width: 740px) {
-    main{
-        width: 100%;
-    }
-    
-    
-    
-    .card h-100{
-        width: 50%; 
-        margin: 30px;
-        height: 2100px;
-    }
-    .flex-container{
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 2000px) {
-    main{
-        width: 100%;
-    }
-    #demo {
-        width: 100%;
-    }
-    
-}
-
 
 body {
     background-image: $primary-color;
     font-family: "Sofia", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-
-
-
-.carousel-inner {
-    width: 1220px;
-    margin-left: 50px;
-}
-
-.carousel-inner img {
-    height: 700px;
-    width: 1400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    background-size: 100% 100%;
-}
-
-#contenedor {
-    animation-duration: 5s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-}
-
-@media screen and (max-width: 525px) {
-    main{
-        width: 100%;
-    }
-    #demo {
-        width: 100%;
-    }
-    #demo img{
-        width: 50%; 
-        margin: 30px
-    }
-    .vestidos-contenedor{
-        width: 50%; 
-        margin: 30px;
-        padding-bottom:3500px;
-    }
-    .card h-100{
-        width: 50%; 
-        margin: 30px
-    }
-    .flex-container{
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 2000px) {
-    main{
-        width: 100%;
-    }
-    #demo {
-        width: 100%;
-    }
-    
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.menu li {
-    display: inline-block;
-}
-
-.menu li a {
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-    text-align: center;
-}
-
-ul.slider {
-    height: 400px;
-    background-image: cover;
-    width: 1250;
-}
-
-ul.slider li {
-    position: absolute;
-    left: 5;
-    top: 0;
-    opacity: 0;
-    width: 1000px;
-    height: inherit;
-    background-color: wheat;
-    transition: opacity .5s;
-}
-
-ul.slider li img {
-    height: 400px;
-    object-fit: cover;
-}
-
-ul.slider li:first-child {
-    opacity: 1;
-}
-
-ul.slider li:target {
-    opacity: 2;
-}
-
-main .titulo {
-    text-align: center;
-    font-size: 50px;
-}
-
-.vestidos-contenedor {
-    height: 1200px;
-    width: 1220px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-right: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    background-position: center;
-    margin-right: 400px;
-    background-image: url(../img/fondo.jpg);
-    padding: $box-shadow;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.card-img-top {
-    width: 300px;
-    height: 400px;
-    font-size: 15px;
-}
-
-ul {
-    @include global;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    li {
-        display: inline-flex;
-        a {
-            @include btn($background-color,
-            $bold: "true", $color: $secondary-color);
-            font-weight: normal;
-            &:hover {
-                @include btn ($secondary-color,
-                $terciary-color,
-                "false");
-                box-shadow: $box-shadow;
-                font-weight: normal;
-            }
-        }
-    }
-}
-
-// .containerTitulo {
-//     font-size: 60px;
-//     text-align: justify;
-// }
-
-footer {
-    padding: 100px;
-    width: 1220px;
-    margin-top: 20px;
-    margin-left: 50px;
-    display: inline-flex;
-    background-image: url(../img/lineas-abstractas-onda-suave-verde_1017-24872.jpg);
-    background-size: cover;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100px;
-    .a {
-        @include btn($background-color,
-        $bold: "true", $color: $secondary-color);
-        font-weight: normal;
-        &:hover {
-            @include btn ($secondary-color,
-            $terciary-color,
-            "false");
-            box-shadow: $box-shadow;
-            font-weight: normal;
-        }
-    }
-}
-
 header {
     padding: 100px;
-    width: 1220px;
+    width: 100%;
     margin-top: 20px;
-    margin-left: 50px;
     display: inline-flex;
     background-image: url(../img/bodaheader3.jpg);
     background-size: cover;
@@ -285,4 +66,212 @@ header {
         }
     }
 }
+
+#logo{
+    float:left;
+    width: 45%;
+    padding-right: 25%; 
+ }
+
+.flex-container .titulo{
+    text-align: center;
+}
+.carousel-inner {
+    width: 100%;
+}
+.carousel-inner img {
+    height: 700px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    background-size: 100% 100%;
+}
+#contenedor {
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    text-align: center;
+}
+ul.slider {
+    height: 400px;
+    background-image: cover;
+    width: 1250;
+}
+ul.slider li {
+    position: absolute;
+    left: 5;
+    top: 0;
+    opacity: 0;
+    width: 1000px;
+    height: inherit;
+    background-color: wheat;
+    transition: opacity .5s;
+}
+ul.slider li img {
+    height: 400px;
+    object-fit: cover;
+}
+ul.slider li:first-child {
+    opacity: 1;
+}
+ul.slider li:target {
+    opacity: 2;
+}
+main .titulo {
+    text-align: center;
+    font-size: 50px;
+}
+.vestidos-contenedor {
+    height: 1200px;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-image: url(../img/fondo.jpg);
+    padding: $box-shadow;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-img-top {
+    width: 300px;
+    height: 400px;
+    font-size: 15px;
+}
+ul {
+    @include global;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    li {
+        display: inline-flex;
+        a {
+            @include btn($background-color,
+            $bold: "true", $color: $secondary-color);
+            font-weight: normal;
+            &:hover {
+                @include btn ($secondary-color,
+                $terciary-color,
+                "false");
+                box-shadow: $box-shadow;
+                font-weight: normal;
+            }
+        }
+    }
+}
+footer {
+    padding: 100px;
+    width: 
+    100%;
+    margin-top: 20px;
+    // margin-left: 50px;
+    display: inline-flex;
+    background-image: url(../img/lineas-abstractas-onda-suave-verde_1017-24872.jpg);
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    .a {
+        @include btn($background-color,
+        $bold: "true", $color: $secondary-color);
+        font-weight: normal;
+        &:hover {
+            @include btn ($secondary-color,
+            $terciary-color,
+            "false");
+            box-shadow: $box-shadow;
+            font-weight: normal;
+        }
+    }
+}
+
+// Responsive
+
+@media screen and (max-width: 1220px) { 
+    .flex-container{ 
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+    }
+
+@media screen and (max-width: 1020px) { 
+.flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    }
+
+@media screen and (max-width: 520px) { 
+ header .flex-container{
+    width: 100%;
+    left: 0;
+    color: honeydew;
+    overflow: hidden ;
+ }
+
+ #logo{
+     margin-left: 50px;
+ }
+
+.flex-container ul li a{
+    width: 0%;
+    padding:0% ;
+}
+.vestidos-contenedor{
+height: min-content;}
+.flex-container .none{
+    display: none;
+}
+}
+@media screen and (max-width: 800px) { 
+    header .flex-container{
+        width: 100%;
+        left: 0;
+        overflow: hidden ;
+     }
+    
+     #logo{
+         margin-left: 50px;
+     }
+    
+    .flex-container ul li a{
+        width: 0%;
+        padding:0% ;
+    }
+    .vestidos-contenedor{
+    height: min-content;}
+    .flex-container .none{
+        display: none;
+    }
+    }
+
+
+
+
+
+
 
