@@ -69,8 +69,8 @@ header {
 
 #logo{
     float:left;
-    width: 45%;
-    padding-right: 25%; 
+    width: 40%;
+    padding-right: 15%; 
  }
 
 .flex-container .titulo{
@@ -166,10 +166,13 @@ ul {
     gap: 20px;
     li {
         display: inline-flex;
+        list-style: initial;
         a {
             @include btn($background-color,
             $bold: "true", $color: $secondary-color);
             font-weight: normal;
+        text-decoration: none;
+
             &:hover {
                 @include btn ($secondary-color,
                 $terciary-color,
@@ -180,6 +183,7 @@ ul {
         }
     }
 }
+
 footer {
     padding: 100px;
     width: 

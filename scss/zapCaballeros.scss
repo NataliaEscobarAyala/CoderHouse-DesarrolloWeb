@@ -68,25 +68,22 @@ header {
 }
 #logo{
     float:left;
-    width: 45%;
-    padding-right: 25%; 
+    width: 40%;
+    padding-right: 15%; 
  }
-
-main {
-    height: 1200px;
-    width: 100%;
-    margin-top: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    background-position: center;
-    background-image: url(../img/fondo.jpg);
-    padding: $box-shadow;
-    padding-left: 10px;
-    padding-right: 10px;
+.flex-container .titulo{
+    text-align: center;
 }
+
+main .titulo {
+    text-align: center;
+    font-size: 50px;
+}
+
 .card-img-top {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+    width: 300px;
+    height: 400px;
+    font-size: 15px;
 }
 ul {
     @include global;
@@ -99,6 +96,7 @@ ul {
             @include btn($background-color,
             $bold: "true", $color: $secondary-color);
             font-weight: normal;
+            text-decoration: none;
             &:hover {
                 @include btn ($secondary-color,
                 $terciary-color,
@@ -151,6 +149,12 @@ footer {
 
 @media screen and (max-width: 1120px) { 
  .flex-container{
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+// max-height: min-content;
+//     }
+// }.flex-container{ 
     max-width: 1200px;
     padding: 0 20px;
 }
@@ -233,3 +237,4 @@ height: min-content;}
     }
     
 }
+

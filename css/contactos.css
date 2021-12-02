@@ -130,6 +130,7 @@ ul li a {
   border-radius: 5px;
   font-weight: bolder;
   font-weight: normal;
+  text-decoration: none;
 }
 
 ul li a:hover {

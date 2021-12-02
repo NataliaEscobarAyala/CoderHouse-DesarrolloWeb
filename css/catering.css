@@ -78,8 +78,8 @@ header .a:hover {
 
 #logo {
   float: left;
-  width: 45%;
-  padding-right: 25%;
+  width: 40%;
+  padding-right: 15%;
 }
 
 main {
@@ -130,6 +130,7 @@ ul li a {
   border-radius: 5px;
   font-weight: bolder;
   font-weight: normal;
+  text-decoration: none;
 }
 
 ul li a:hover {

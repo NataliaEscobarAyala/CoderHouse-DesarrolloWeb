@@ -22,105 +22,54 @@
     <link rel="stylesheet" href="./css/index.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <script src="./script/codigo.js"></script>
 </head>
 
 <body>
-    <!-- <div class="container">
-        <header>
-            <nav>
-                <h1>
-                    <img id="logo" src="./img/logotrans.png" alt="logo event&dreams">
-                </h1>
-
-                <ul class="btn">
-                    <li>
-                        <button type="button" class="btn btn-succes"><a href="./web/sobrenosotros.html">Sobre nosotros</a></button>
-                    </li>
-                    <li>
-                        <a href="./web/contacto.html">Contacto</a>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><a href="./web/productosindex.html">Productos</a>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="./web/ZapatosDama.html">Zapatos- Dama</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./web/ZapatosCaballero.html">Zapatos- Caballero</a>
-                            <div class="dropdown-divider"></div>
-
-                            <a class="dropdown-item" href="./web/Joyeria.html">Joyeria</a>
-                            <div class="dropdown-divider"></div>
-
-
-                        </div>
-
-                    </li>
-
-                    <li>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><a href="servicios.html">Servicios</a>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="./web/Catering.html">Catering</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="./web/Dj.html">DJ</a>
-                                <div class="dropdown-divider"></div>
-
-
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div> -->
     <header class="flex-container">
         <img id="logo" src="./img/logotrans.png" alt="logo event&dreams">
         <ul>
-            <li>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true"><a href="servicios.html">Servicios</a>
-                    </button>
+            <ul class="btn">
+                <li>
+                    <a class="none" href="./web/sobrenosotros.html">Sobre nosotros</a>
+
+                </li>
+                <li>
+                    <a class="none" href="./web/contacto.html">Contacto</a>
+
+                </li>
+                <li>
+                    <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><a href="productosindex.html">Productos</a>
+                </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="./web/Catering.html">Catering</a>
+                        <a class="dropdown-item" href="./web/ZapatosDama.html">Zapatos- Dama</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./web/Dj.html">DJ</a>
+                        <a class="dropdown-item" href="./web/ZapatosCaballero.html">Zapatos- Caballero</a>
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item" href="./web/Joyeria.html">Joyeria</a>
                         <div class="dropdown-divider"></div>
                     </div>
-            </li>
-            <li>
-                <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown"
-                    aria-haspopup="true"><a href="./web/productosindex.html">Productos</a>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./web/ZapatosDama.html">Zapatos- Dama</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./web/ZapatosCaballero.html">Zapatos- Caballero</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./web/Joyeria.html">Joyeria</a>
-                    <div class="dropdown-divider"></div>
-                </div>
-            </li>
-            
-            <li>
-                <a class="none" href="./web/sobrenosotros.html ">Sobre nosotros</a>
-            </li>
-            <li>
-                <a class="none" href="./web/contacto.html ">Contacto</a>
-            </li>
-        </ul>
-        </li>
-        </ul>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><a>Servicios</a>
+                    </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./web/Catering.html">Catering</a></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./web/Dj.html">DJ</a></a> 
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
     </header>
     <div class="flex-container">
         <h1 class="titulo"> Organiza la boda de tus sueños con Event&Dreams</h1>
     </div>
 
-    <!-- <main class="flex-container"> -->
-    <!-- <div class="container-all" id="move-content">  -->
     <main>
         <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
@@ -229,7 +178,7 @@
             <li>
                 <div class="btn-group">
                     <button type="button" class="btn btn-succes dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true"><a href="servicios.html">Servicios</a>
+                        aria-haspopup="true"><a>Servicios</a>
                     </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="./web/Catering.html">Catering</a>
@@ -258,7 +207,7 @@
         </li>
         </ul>
         <div>
-            <!-- <div>Seguinos en:</div>
+            <div>Seguinos en:</div>
             <ul>
                 <li>
                     <a href="https://www.facebook.com/" class="btn">
@@ -281,10 +230,9 @@
                     </a>
                 </li>
             </ul>
-        </div> -->
+        </div>
     </footer>
 
-    <!-- </div> -->
 
 </body>
 

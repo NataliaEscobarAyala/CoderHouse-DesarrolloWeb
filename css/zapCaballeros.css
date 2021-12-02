@@ -78,27 +78,23 @@ header .a:hover {
 
 #logo {
   float: left;
-  width: 45%;
-  padding-right: 25%;
+  width: 40%;
+  padding-right: 15%;
 }
 
-main {
-  height: 1200px;
-  width: 100%;
-  margin-top: 20px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  background-position: center;
-  background-image: url(../img/fondo.jpg);
-  padding: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
-  padding-left: 10px;
-  padding-right: 10px;
+.flex-container .titulo {
+  text-align: center;
+}
+
+main .titulo {
+  text-align: center;
+  font-size: 50px;
 }
 
 .card-img-top {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
+  width: 300px;
+  height: 400px;
+  font-size: 15px;
 }
 
 ul {
@@ -136,6 +132,7 @@ ul li a {
   border-radius: 5px;
   font-weight: bolder;
   font-weight: normal;
+  text-decoration: none;
 }
 
 ul li a:hover {
