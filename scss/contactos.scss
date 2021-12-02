@@ -71,11 +71,14 @@ header {
     width: 40%;
     padding-right: 15%; 
  }
-
+.flex-container .titulo{
+    text-align: center;
+}
 main {
     height: 1200px;
     width: 100%;
     margin-top: 20px;
+    margin-right: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     background-position: center;
     background-image: url(../img/fondo.jpg);
@@ -83,7 +86,16 @@ main {
     padding-left: 10px;
     padding-right: 10px;
 }
+main .titulo {
+    text-align: center;
+    font-size: 50px;
+}
 
+.card-img-top {
+    width: 300px;
+    height: 400px;
+    font-size: 15px;
+}
 ul {
     @include global;
     list-style: none;
@@ -95,8 +107,7 @@ ul {
             @include btn($background-color,
             $bold: "true", $color: $secondary-color);
             font-weight: normal;
-        text-decoration: none;
-
+            text-decoration: none;
             &:hover {
                 @include btn ($secondary-color,
                 $terciary-color,
@@ -231,4 +242,3 @@ height: min-content;}
     }
     
 }
-
