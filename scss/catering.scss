@@ -1,3 +1,4 @@
+// APLICANDO SASS
 $primary-color:linear-gradient(rgb(202, 247, 202), white);
 $secondary-color:#9fee94;
 $terciary-color: white;
@@ -66,14 +67,15 @@ header {
         }
     }
 }
+// LOGO DE HEADER
 #logo{
     float:left;
     width: 40%;
     padding-right: 15%; 
  }
-
+// CONTENIDO
 main {
-    height: 1200px;
+    height: 1000px;
     width: 100%;
     margin-top: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
@@ -83,7 +85,7 @@ main {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+// BOTONES, DISPOSICION Y ESTILO
 ul {
     @include global;
     list-style: none;
@@ -135,7 +137,7 @@ footer {
 }
 
 
-// Responsive
+// RESPONSIVE
 
 @media screen and (max-width: 1220px) { 
     .flex-container{ 
@@ -231,17 +233,11 @@ height: min-content;}
     }
     
 }
-
-
-
+// RESPONSIVE: VIDEO 
 .video-responsive {
-    // position: relative;
     padding-bottom: 56.25%;
-    /* 16/9 ratio */
     padding-top: 30px;
-    /* IE6 workaround*/
     height: 0;
-    // overflow: hidden;
 }
 
 .video-responsive iframe,

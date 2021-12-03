@@ -1,3 +1,4 @@
+// APLICANDO SASS
 $primary-color:linear-gradient(rgb(202, 247, 202), white);
 $secondary-color:#9fee94;
 $terciary-color: white;
@@ -66,7 +67,7 @@ header {
         }
     }
 }
-
+// LOGO DE HEADER
 #logo{
     float:left;
     width: 40%;
@@ -76,6 +77,7 @@ header {
 .flex-container .titulo{
     text-align: center;
 }
+// CARRUSEL 
 .carousel-inner {
     width: 100%;
 }
@@ -142,6 +144,7 @@ main .titulo {
     text-align: center;
     font-size: 50px;
 }
+// VESTIDOS DE BODA
 .vestidos-contenedor {
     height: 1200px;
     width: 100%;
@@ -159,6 +162,7 @@ main .titulo {
     height: 400px;
     font-size: 15px;
 }
+// BOTONES, DISPOSICION Y ESTILO
 ul {
     @include global;
     list-style: none;
@@ -189,7 +193,6 @@ footer {
     width: 
     100%;
     margin-top: 20px;
-    // margin-left: 50px;
     display: inline-flex;
     background-image: url(../img/lineas-abstractas-onda-suave-verde_1017-24872.jpg);
     background-size: cover;
@@ -212,7 +215,7 @@ footer {
     }
 }
 
-// Responsive
+// RESPONSIVE
 
 @media screen and (max-width: 1220px) { 
     .flex-container{ 
